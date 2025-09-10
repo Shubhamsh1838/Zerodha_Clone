@@ -16,7 +16,7 @@ function Stats() {
                     <p className='text-muted col-10'>With initiatives like Nudge and Kill Switch, we don't just facilitate transactions, but actively help you do better with your money.</p>
                 </div>
                 <div className='col-6 p-5'>
-                    <img src='media/images/ecosystem.png' style={{width:"130%"}} />
+                    <img src='Media/Images/ecosystem.png' alt='ecosystem' style={{width:"130%"}} />
                     <div className='text-center'>
                         <a className='mx-5' href='' style={{textDecoration: "none"}}>Explore our products <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         <a href=''style={{textDecoration: "none"}}>Try Kite demo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
@@ -26,5 +26,6 @@ function Stats() {
         </div>
      );
 }
+
 
 export default Stats;
