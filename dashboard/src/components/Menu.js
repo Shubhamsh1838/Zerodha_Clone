@@ -11,7 +11,7 @@ const Menu = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const { data } = await axios.post("http://localhost:3002/", {}, { withCredentials: true });
+        const { data } = await axios.post("https://zerodha-clone-server.onrender.com/", {}, { withCredentials: true });
         if (data.status) {
           setUsername(data.user); // backend returns { status: true, user: username }
         }
@@ -24,8 +24,8 @@ const Menu = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:3002/logout", {}, { withCredentials: true });
-      window.location.href = "http://localhost:3001/";
+      await axios.post("https://zerodha-clone-server.onrender.com/logout", {}, { withCredentials: true });
+      window.location.href = "https://zerodha-clone-7k6t.onrender.com/";
     } catch (err) {
       console.error("Logout failed:", err);
     }
@@ -98,5 +98,6 @@ const Menu = () => {
     </div>
   );
 };
+
 
 export default Menu;
