@@ -8,7 +8,7 @@ function Team() {
             </div>
             <div className='row p-3'>
                 <div className='col text-center' style={{marginLeft:"100px"}}>
-                    <img src='media/images/Shubham.jpg' style={{width: "250px", height: "250px", objectFit: "cover", marginTop: "70px", borderRadius:"100%"}}/>
+                    <img src='Media/Images/Shubham.jpg' alt='Shubham_img' style={{width: "250px", height: "250px", objectFit: "cover", marginTop: "70px", borderRadius:"100%"}}/>
                     <h4 className='mt-4 text-muted fs-4'>Shubham Sharma</h4>
                     <h6 className='mt-4 text-muted fs-6'>Founder Zerodha Clone</h6>
                 </div>
@@ -24,5 +24,6 @@ function Team() {
         </div>
      );
 }
+
 
 export default Team;
