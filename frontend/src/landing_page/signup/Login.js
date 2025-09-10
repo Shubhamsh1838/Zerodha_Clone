@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+axios.defaults.baseURL = process.env.REACT_APP_Backend_url
 const Login = () => {
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState({
@@ -32,7 +32,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://zerodha-clone-server.onrender.com/login",
+        "/login",
         {
           ...inputValue,
         },
@@ -94,4 +94,5 @@ const Login = () => {
 
 
 export default Login;
+
 
