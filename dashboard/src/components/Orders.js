@@ -6,7 +6,7 @@ const Orders = () => {
   const [allOrder, setAllOrder] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allOrders").then((res)=>{
+    axios.get("https://zerodha-clone-server.onrender.com/allOrders").then((res)=>{
       console.log(res.data);
       setAllOrder(res.data);
     });
@@ -42,5 +42,6 @@ const Orders = () => {
     </>
   );
 };
+
 
 export default Orders;
