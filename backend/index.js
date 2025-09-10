@@ -31,5 +31,6 @@ app.listen(PORT, () => {
    .then(() => console.log("MongoDB is  connected successfully"))
    .catch((err) => console.error(err));
 });
-app.use("/", authRoute);
+app.use("https://zerodha-clone-server.onrender.com/", authRoute);
+
 
