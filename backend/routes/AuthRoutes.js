@@ -32,7 +32,7 @@ router.get("/allOrders", async(req,res)=> {
     res.json(allOrder);
 });
 
-router.post("/",userVerification);
+router.post("/", userVerification);
 
 router.post("/signup", Signup);
 
@@ -46,5 +46,6 @@ router.post("/logout", (req, res) => {
 
 
 module.exports = router;
+
 
 
