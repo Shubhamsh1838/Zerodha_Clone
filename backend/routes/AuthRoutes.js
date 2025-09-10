@@ -46,3 +46,4 @@ router.post("https://zerodha-clone-server.onrender.com/logout", (req, res) => {
 
 
 module.exports = router;
+
