@@ -16,13 +16,14 @@ function LeftSection({imageUrl, productName, productDescription, tryDemo, learnM
                         <a href={learnMore} style={{marginLeft: '50px', textDecoration:"none"}}>Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                     <div className='mt-4 ps-5'>
-                        <a href={googlePlay}> <img src='media/images/googlePlayBadge.svg'/></a>
-                        <a href={appStore} style={{marginLeft: "30px"}}> <img src='media/images/appstoreBadge.svg'/></a>
+                        <a href={googlePlay}> <img src='Media/Images/googlePlayBadge.svg' alt='googlePlayBadge' /></a>
+                        <a href={appStore} style={{marginLeft: "30px"}}> <img src='Media/Images/appstoreBadge.svg'alt='appstoreBadge' /></a>
                     </div>
                 </div>
             </div>
         </div>
      );
 }
+
 
 export default LeftSection;
