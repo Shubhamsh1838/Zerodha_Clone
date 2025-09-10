@@ -11,15 +11,15 @@ function Pricing() {
                 </div>
                 <div className='col-7 d-flex mb-3'>
                     <div className='d-flex' style={{marginRight: "20px"}}>
-                        <img src='media/images/10rupees.svg'style={{width: "60%", marginTop: "10px"}} />
+                        <img src='Media/Images/10rupees.svg' alt='10rupees' style={{width: "60%", marginTop: "10px"}} />
                         <div className='text-muted mt-5'><p style={{fontSize: "70%"}}className='mt-4'>Free account<br/> opening</p></div>
                     </div>
                     <div className='d-flex' style={{marginRight: "20px"}}>
-                        <img src='media/images/10rupees.svg'style={{width: "45%", marginTop: "10px"}} />
+                        <img src='Media/Images/10rupees.svg' alt='10rupees' style={{width: "45%", marginTop: "10px"}} />
                         <div className='mt-5 text-muted'><p style={{fontSize: "70%"}} className='mt-4'>Free equity delivery <br/>and direct mutual funds</p></div>
                     </div>
                     <div className='d-flex'>
-                        <img src='media/images/20rupees.svg'style={{width: "52%", marginTop: "10px"}} />
+                        <img src='Media/Images/20rupees.svg' alt='20rupees' style={{width: "52%", marginTop: "10px"}} />
                         <div className='mt-5 text-muted'><p style={{fontSize: "70%"}} className='mt-4'>Intraday and<br/> F&O</p></div>
                     </div>
                 </div>
@@ -27,5 +27,6 @@ function Pricing() {
         </div>
      );
 }
+
 
 export default Pricing;
