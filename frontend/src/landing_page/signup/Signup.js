@@ -4,6 +4,8 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+axios.defaults.baseURL = process.env.REACT_APP_Backend_url;
+
 function Signup() {
     const navigate = useNavigate();
     const [inputVal, setInputVal] = useState({
@@ -29,7 +31,7 @@ function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const {data} = await axios.post("https://zerodha-clone-server.onrender.com/signup", {...inputVal}, { withCredentials: true });
+            const {data} = await axios.post("/signup", {...inputVal}, { withCredentials: true });
             const { success, message } = data;
             console.log(data);
             if (success) {
@@ -72,6 +74,5 @@ function Signup() {
         </div>
      );
 }
-
 
 export default Signup;
