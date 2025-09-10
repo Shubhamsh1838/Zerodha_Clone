@@ -43,7 +43,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "http://localhost:3000/";
+          window.location.href = "https://zerodha-clone-dashboard-6mj0.onrender.com/";
         }, 1000);
       } else {
         handleError(message);
@@ -94,3 +94,4 @@ const Login = () => {
 
 
 export default Login;
+
