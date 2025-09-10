@@ -32,7 +32,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login",
+        "https://zerodha-clone-server.onrender.com/login",
         {
           ...inputValue,
         },
@@ -91,5 +91,6 @@ const Login = () => {
     </div>
   );
 };
+
 
 export default Login;
