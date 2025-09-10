@@ -5,7 +5,7 @@ function Navbar() {
     return ( 
             <nav class="navbar navbar-expand-lg border-bottom ms-5">
                 <div class="container p-2" style={{backgroundColor: "#FFF"}}>
-                    <Link class="navbar-brand" to='/'><img src='media/images/logo.svg' style={{width: "20%", marginLeft: "80px"}}/></Link>
+                    <Link class="navbar-brand" to='/'><img src='Media/Images/logo.svg' alt='logo' style={{width: "20%", marginLeft: "80px"}}/></Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -34,5 +34,6 @@ function Navbar() {
             </nav>
      );
 }
+
 
 export default Navbar;
