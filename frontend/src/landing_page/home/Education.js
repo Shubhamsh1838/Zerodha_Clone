@@ -5,7 +5,7 @@ function Education() {
         <div className='container mt-5 p-5'>
             <div className='row mt-5'>
                 <div className='col-6'>
-                    <img src='media/images/education.svg'style={{width: "75%", marginLeft: "70px"}}/>
+                    <img src='Media/Images/education.svg'style={{width: "75%", marginLeft: "70px"}}/>
                 </div>
                 <div className='col-6 mt-5'>
                     <h2 className='fw-semibold mb-4 fs-3'>Free and open market education</h2>
@@ -20,5 +20,6 @@ function Education() {
         </div>
      );
 }
+
 
 export default Education;
