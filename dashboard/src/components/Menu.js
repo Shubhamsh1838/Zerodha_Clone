@@ -13,7 +13,7 @@ const Menu = () => {
       try {
         const { data } = await axios.post("https://zerodha-clone-server.onrender.com/", {}, { withCredentials: true });
         if (data.status) {
-          setUsername(data.user); // backend returns { status: true, user: username }
+          setUsername(data.username); // backend returns { status: true, user: username }
         }
       } catch (err) {
         console.error("User fetch failed:", err);
@@ -101,3 +101,4 @@ const Menu = () => {
 
 
 export default Menu;
+
